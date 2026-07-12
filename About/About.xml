@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ModMetaData>
+    <packageId>wishRobber.managefromscribetable</packageId>
+    <name>Colony Manager Redux at the Scribe Table</name>
+    <author>wishRobber</author>
+    <description>Allows Colony Manager Redux's tasks be performed at Medieval Overhaul's scribe table, while maintaining its book-writing functionality.</description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+    <modDependencies>
+        <li>
+            <packageId>ilyvion.colonymanagerredux</packageId>
+            <displayName>Colony Manager Redux</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3310027356</steamWorkshopUrl>
+        </li>
+        <li>
+            <packageId>DankPyon.Medieval.Overhaul</packageId>
+            <displayName>Medieval Overhaul</displayName>
+            <steamWorkshopUrl>steam://url/CommunityFilePage/3219596926</steamWorkshopUrl>
+        </li>
+    </modDependencies>
+    <loadAfter>
+        <li>ilyvion.colonymanagerredux</li>
+        <li>DankPyon.Medieval.Overhaul</li>
+    </loadAfter>
+</ModMetaData>

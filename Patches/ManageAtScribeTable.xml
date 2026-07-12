@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- Let Colony Manager Redux's managing tasks be performed at Medieval Overhaul's
+         scribe table. CMR's Building_ManagerStation derives from Building_WorkTable and
+         CMR detects stations via AllBuildingsColonistOfClass<Building_ManagerStation>, so
+         swapping the thingClass keeps book-writing AND adds management. The
+         CompProperties_ManagerStation comp supplies the manager gizmo + work speed. -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Book_ScribeTable"]/thingClass</xpath>
+                    <value>
+                        <thingClass>ColonyManagerRedux.Building_ManagerStation</thingClass>
+                    </value>
+                </li>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="DankPyon_Book_ScribeTable"]/comps</xpath>
+                    <value>
+                        <li Class="ColonyManagerRedux.CompProperties_ManagerStation">
+                            <speed>1000</speed>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
