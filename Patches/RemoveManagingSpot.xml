@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <!-- The scribe table now handles all managing (see ManageAtScribeTable.xml), so Colony Manager
+         Redux's dedicated "Managing spot" is redundant. Remove its build-menu category so it can no
+         longer be built. The ThingDef itself is left intact (research and other references stay
+         valid); it simply no longer appears in the Production architect menu. -->
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Colony Manager Redux</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="CMR_ManagingSpot"]/designationCategory</xpath>
+            <success>Normal</success>
+        </match>
+    </Operation>
+</Patch>
