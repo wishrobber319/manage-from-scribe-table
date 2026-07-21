@@ -1,0 +1,10 @@
+[b]Manage your colony from the scribe table.[/b] Colony Manager Redux normally runs from an industrial console. This lets you manage hunting, forestry and livestock at Medieval Overhaul's scribe table, which keeps its book-writing job too.
+
+[hr][/hr]
+[b]What's inside[/b]
+[list]
+[*][b]Management on the scribe table.[/b] The hunting, forestry and livestock managers run from the medieval bench.
+[*][b]No industrial console needed.[/b] Fits a medieval colony without breaking the theme.
+[*][b]Keeps book-writing.[/b] The scribe table still does everything it did before.
+[*][b]Requires Medieval Overhaul and Colony Manager Redux.[/b]
+[/list]
